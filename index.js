@@ -1,5 +1,6 @@
 import FactoryMethod from './factoryMethod'
 import TestFeature from './testFeature'
+import AbstractFactoryExample from './abstractFactory/index'
 
 class Main {
 
@@ -16,10 +17,18 @@ class Main {
         fabric2.start(2)
     }
 
+    /**
+    * @param {("Win"|"Mac")} type
+    */
+    static abstractFactoryTest(type){
+        AbstractFactoryExample.start(type)
+    }
+
     static start() {
 
         // this.testFeature()
-        this.factoryMethodTest()
+        // this.factoryMethodTest()
+        this.abstractFactoryTest("Mac")
 
     }
 }
