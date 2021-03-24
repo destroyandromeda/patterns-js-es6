@@ -1,22 +1,26 @@
 import FactoryMethod from './factoryMethod'
 import TestFeature from './testFeature'
 
-class Main{
+class Main {
 
-    static testFeature(){
+    static testFeature() {
         TestFeature.start()
     }
 
-    static fabricMethodTest(){
+    static factoryMethodTest() {
         let fabric = new FactoryMethod()
-        console.log(fabric);
-        fabric.log()
+        fabric.start()
+        let fabric1 = new FactoryMethod(1)
+        fabric1.start(1)
+        let fabric2 = new FactoryMethod(2)
+        fabric2.start(2)
     }
 
-    static start(){
+    static start() {
 
         // this.testFeature()
-        this.fabricMethodTest()
+        this.factoryMethodTest()
+
     }
 }
 
