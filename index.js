@@ -3,7 +3,6 @@ import SingletonExample from './creational-patterns/singleton/index'
 import BuilderPatternExample from './creational-patterns/builder/index'
 import FactoryMethodExample from './creational-patterns/FactoryMethod/index'
 import AbstractFactoryExample from './creational-patterns/abstractFactory/index'
-import Singleton from './creational-patterns/singleton/Singleton';
 class Main {
 
     static factoryMethodExamplePatternTest() {
