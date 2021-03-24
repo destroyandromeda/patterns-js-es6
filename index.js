@@ -1,7 +1,7 @@
 import FactoryMethod from './factoryMethod'
 import TestFeature from './testFeature'
 import AbstractFactoryExample from './abstractFactory/index'
-
+import BuilderPatternExample from './builder/index'
 class Main {
 
     static testFeature() {
@@ -20,15 +20,20 @@ class Main {
     /**
     * @param {("Win"|"Mac")} type
     */
-    static abstractFactoryTest(type){
+    static abstractFactoryTest(type) {
         AbstractFactoryExample.start(type)
+    }
+
+    static builderPatternTest() {
+        BuilderPatternExample.start()
     }
 
     static start() {
 
         // this.testFeature()
         // this.factoryMethodTest()
-        this.abstractFactoryTest("Mac")
+        // this.abstractFactoryTest("Mac")
+        this.builderPatternTest("Mac")
 
     }
 }
