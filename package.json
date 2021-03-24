@@ -1,0 +1,25 @@
+{
+  "name": "patterns",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js --exec babel-node",
+    "build": "babel src --out-dir dist",
+    "start": "node -r dist/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "@babel/cli": "^7.12.7",
+    "@babel/core": "^7.12.7",
+    "@babel/node": "^7.12.6",
+    "@babel/preset-env": "^7.12.7",
+    "@babel/register": "^7.12.1",
+    "babel-core": "^6.26.3",
+    "babel-register": "^6.26.0",
+    "nodemon": "^2.0.6"
+  }
+}
