@@ -3,7 +3,7 @@ import DialogTypeOne from "./dialogs/DialogTypeOne"
 import DialogTypeTwo from "./dialogs/DialogTypeTwo"
 import Dialog from './dialogs/Dialog';
 
-class FactoryMethod {
+class FactoryMethodExample {
     constructor(type){
         this.type = type
     }
@@ -14,8 +14,6 @@ class FactoryMethod {
     }
 
     start(){
-        console.log(`FactoryMethod(type ${this.type})`)
-
         let dialog
 
         if(this.type === 1){
@@ -31,4 +29,4 @@ class FactoryMethod {
     }
 }
 
-export default FactoryMethod
+export default FactoryMethodExample

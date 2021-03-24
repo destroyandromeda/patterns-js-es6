@@ -1,27 +1,22 @@
-import FactoryMethod from './creational-patterns/factoryMethod'
-import TestFeature from './testFeature'
-import AbstractFactoryExample from './creational-patterns/abstractFactory/index'
-import BuilderPatternExample from './creational-patterns/builder/index'
 import PrototypeExample from './creational-patterns/prototype/index'
+import BuilderPatternExample from './creational-patterns/builder/index'
+import FactoryMethodExample from './creational-patterns/FactoryMethod/index'
+import AbstractFactoryExample from './creational-patterns/abstractFactory/index'
 class Main {
 
-    static testFeature() {
-        TestFeature.start()
-    }
-
-    static factoryMethodTest() {
-        let fabric = new FactoryMethod()
+    static factoryMethodExamplePatternTest() {
+        let fabric = new FactoryMethodExample()
         fabric.start()
-        let fabric1 = new FactoryMethod(1)
+        let fabric1 = new FactoryMethodExample(1)
         fabric1.start(1)
-        let fabric2 = new FactoryMethod(2)
+        let fabric2 = new FactoryMethodExample(2)
         fabric2.start(2)
     }
 
     /**
     * @param {("Win"|"Mac")} type
     */
-    static abstractFactoryTest(type) {
+    static abstractFactoryPatternTest(type) {
         AbstractFactoryExample.start(type)
     }
 
@@ -35,15 +30,14 @@ class Main {
         prototype.start()
     }
 
-    static start() {
+    static creationalPatterns() {
 
-        //this.testFeature()
-        //this.factoryMethodTest()
-        //this.abstractFactoryTest("Mac")
+        // this.factoryMethodExamplePatternTest()
+        // this.abstractFactoryPatternTest("Mac")
         // this.builderPatternTest()
         this.prototypePatternTest()
 
     }
 }
 
-Main.start()
+Main.creationalPatterns()
