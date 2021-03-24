@@ -1,7 +1,9 @@
 import PrototypeExample from './creational-patterns/prototype/index'
+import SingletonExample from './creational-patterns/singleton/index'
 import BuilderPatternExample from './creational-patterns/builder/index'
 import FactoryMethodExample from './creational-patterns/FactoryMethod/index'
 import AbstractFactoryExample from './creational-patterns/abstractFactory/index'
+import Singleton from './creational-patterns/singleton/Singleton';
 class Main {
 
     static factoryMethodExamplePatternTest() {
@@ -30,12 +32,17 @@ class Main {
         prototype.start()
     }
 
+    static singletonPatternTest() {
+        SingletonExample.start()
+    }
+
     static creationalPatterns() {
 
         // this.factoryMethodExamplePatternTest()
         // this.abstractFactoryPatternTest("Mac")
         // this.builderPatternTest()
-        this.prototypePatternTest()
+        // this.prototypePatternTest()
+        this.singletonPatternTest()
 
     }
 }
