@@ -2,6 +2,7 @@ import FactoryMethod from './creational-patterns/factoryMethod'
 import TestFeature from './testFeature'
 import AbstractFactoryExample from './creational-patterns/abstractFactory/index'
 import BuilderPatternExample from './creational-patterns/builder/index'
+import PrototypeExample from './creational-patterns/prototype/index'
 class Main {
 
     static testFeature() {
@@ -28,12 +29,19 @@ class Main {
         BuilderPatternExample.start()
     }
 
+    static prototypePatternTest() {
+        let prototype = new PrototypeExample()
+        prototype.init()
+        prototype.start()
+    }
+
     static start() {
 
         //this.testFeature()
         //this.factoryMethodTest()
         //this.abstractFactoryTest("Mac")
-        this.builderPatternTest()
+        // this.builderPatternTest()
+        this.prototypePatternTest()
 
     }
 }
