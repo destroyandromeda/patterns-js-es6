@@ -1,7 +1,7 @@
-import FactoryMethod from './factoryMethod'
+import FactoryMethod from './creational-patterns/factoryMethod'
 import TestFeature from './testFeature'
-import AbstractFactoryExample from './abstractFactory/index'
-import BuilderPatternExample from './builder/index'
+import AbstractFactoryExample from './creational-patterns/abstractFactory/index'
+import BuilderPatternExample from './creational-patterns/builder/index'
 class Main {
 
     static testFeature() {
@@ -30,10 +30,10 @@ class Main {
 
     static start() {
 
-        // this.testFeature()
-        // this.factoryMethodTest()
-        // this.abstractFactoryTest("Mac")
-        this.builderPatternTest("Mac")
+        //this.testFeature()
+        //this.factoryMethodTest()
+        //this.abstractFactoryTest("Mac")
+        this.builderPatternTest()
 
     }
 }
